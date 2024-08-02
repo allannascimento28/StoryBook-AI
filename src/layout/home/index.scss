@@ -1,0 +1,25 @@
+.home-container {
+  flex: 1;
+  background: url(../../assets/images/background.png) top no-repeat,
+    radial-gradient(50% 50% at 50% 50%, #1e1e1e 0%, #000000 100%) bottom repeat;
+  background-size: 100% 50%, 100%;
+  .title {
+    margin-top: 90px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #fff;
+    @media screen and (max-width: 390px) {
+      margin-top: 48px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 1919px) and (min-width: 391px) {
+      margin-top: calc(48px + (320 / 160) * 1vw);
+    }
+  }
+}
